@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <cctype>
 #include <string>
 #include <sstream>
 #include <cmath>
@@ -31,9 +32,9 @@ BigInteger::BigInteger(string s) // "string" constructor
 }
 
 //-------------------------------------------------------------
-BigInteger::BigInteger(string s, bool sin) // "string" constructor
+BigInteger::BigInteger(const string& s, bool sin) // "string" constructor
 {
-    setNumber(std::move(s));
+    setNumber(s);
     setSign(sin);
 }
 
@@ -57,8 +58,8 @@ BigInteger::BigInteger(int n) // "int" constructor
 }
 
 //-------------------------------------------------------------
-void BigInteger::setNumber(string s) {
-    number = std::move(s);
+void BigInteger::setNumber(const string& s) {
+    number = s;
 }
 
 //-------------------------------------------------------------

@@ -19,9 +19,9 @@ private:
 public:
     BigInteger(); // empty constructor initializes zero
     BigInteger(string s); // "string" constructor
-    BigInteger(string s, bool sin); // "string" constructor
+    BigInteger(const string& s, bool sin); // "string" constructor
     BigInteger(int n); // "int" constructor
-    void setNumber(string s);
+    void setNumber(const string& s);
 
     const string &getNumber(); // retrieves the number
     void setSign(bool s);

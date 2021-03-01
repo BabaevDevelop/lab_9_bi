@@ -3,11 +3,13 @@
 
 int main() {
     string a, b;
-    BigInteger m;
-    BigInteger n;
-    std::cin >> a >> b;
-    m.setNumber(a);
-    n.setNumber(b);
+
+    cout << "Enter first number" << endl;
+    cin >> a;
+    cout << "Enter second number" << endl;
+    cin >> b;
+    BigInteger m(a);
+    BigInteger n(b);
     m += n;
     std::cout << m.getNumber();
     return 0;
