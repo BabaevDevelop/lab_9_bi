@@ -11,6 +11,6 @@ int main() {
     BigInteger m(a);
     BigInteger n(b);
     m += n;
-    std::cout << m.getNumber();
+    std::cout << string(m);
     return 0;
 }
