@@ -8,7 +8,7 @@ int main() {
     std::cin >> a >> b;
     m.setNumber(a);
     n.setNumber(b);
-    m += n;
+    m = m - n;
     std::cout << m.getNumber();
     return 0;
 }
